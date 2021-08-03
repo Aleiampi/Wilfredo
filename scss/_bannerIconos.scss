@@ -1,0 +1,32 @@
+/**********BANNER CON 4 ICONOS *************/
+.bannerIconos {
+    margin: 10px 0px;
+    background-color: $color2;
+
+}
+.bannerIconos__fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bannerIconos__item {
+    display: inline-block;
+    width: 50%;
+    border: 1px solid black;
+
+    img {
+        max-width: 20%;
+    }
+}
+
+@media only screen and (min-width: 780px){
+    .bannerIconos__item {
+        display: inline-block;
+        width: 25%;
+    
+        img {
+            max-width: 20%;
+        }
+    }
+    
+}

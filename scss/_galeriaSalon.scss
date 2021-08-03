@@ -1,0 +1,152 @@
+/*********************GALERIA SALON***********/
+.gallerySalon {
+    background: $color4;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    padding: 2%;
+    display: grid;
+}
+
+.fotoGallerySalon {
+    min-width: 200px;
+    min-height: 200px;
+    background-color: seagreen;
+    border: 1px solid;
+    // filter: grayscale(1);
+}
+
+.fotoGallerySalon:hover {
+    transform: scale(1.2);
+    transition: 0.7s;
+    filter:none;
+    position: relative;
+    z-index: 1;
+}
+
+.salon1 {
+    background-color:sienna;
+    background-image: url(../images/salon3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.salon2 {
+    background-color:sienna;
+    background-image: url(../images/salon7.jpg);
+    background-size: cover;
+    background-position:bottom;
+}
+
+.salon3 {
+    background-color:sienna;
+    background-image: url(../images/salon10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.salon4 {
+    background-color:sienna;
+    background-image: url(../images/salon2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.salon5 {
+    background-color:sienna;
+    background-image: url(../images/salon8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.salon6 {
+    background-color:sienna;
+    background-image: url(../images/salon25.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.salon7 {
+    background-color:sienna;
+    background-image: url(../images/salon20.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.salon8 {
+    background-color:sienna;
+    background-image: url(../images/salon6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.salon9 {
+    background-color:sienna;
+    background-image: url(../images/salon28.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.salon10 {
+    background-color:sienna;
+    background-image: url(../images/salon11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.salon11 {
+    background-color:sienna;
+    background-image: url(../images/salon31.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.salon12 {
+    background-color:sienna;
+    background-image: url(../images/salon19.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .gallerySalon {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    .gallerySalon {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .salon1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .salon8 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .salon4 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    .salon7 {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 2;
+    }
+}
+
+//FOR
+@for $i from 1 through 12 {
+    $filter: grayscale(0.1 * $i); 
+.salon#{$i} {
+  filter: $filter;
+}
+}

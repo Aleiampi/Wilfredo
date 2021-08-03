@@ -1,0 +1,59 @@
+/*****GENERAL****/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+$color1: #212529;
+$color2: #6c757d;
+$color3: rgba(255, 255, 255, 0.7);
+$color4: rgba(71, 1, 1);
+$alto: 600px;
+$ancho: 100%;
+
+// @for $i from 1 to 6 {
+//     h#{$i} {
+//         font-size: $i / 1em;
+//     }
+// }
+
+body {
+    background-color: $color1;
+}
+
+@mixin fondoContenedor {
+    background-color: $color2;
+    border-radius: .25rem;
+    text-align: center;
+    margin: 20px auto;
+}
+
+@mixin contenedorFullWidth {
+    width: $ancho;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+@mixin contenedorMedio {
+    width: ($ancho/2)-25;
+    min-width: 400px;
+    margin: 20px auto;
+    padding: 50px;
+}
+
+.botonRojo {
+    background-color: $color4;
+    color: $color3;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.botonRojo:hover {
+    background-color: $color2;
+    border: 1px solid $color4;
+    color: $color4;
+}

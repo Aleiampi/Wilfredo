@@ -1,0 +1,55 @@
+/*******************SECCION PLATOS RECOMENDADOS*********************/
+.recomendados {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .recomendados__titulo {
+        text-align: center;
+        margin-top: 20px;
+        color: #fff;
+    }
+
+    .recomendados_combo {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .recomendados__item {
+        background-color: $color3;
+        margin: 2px;
+        min-width: 300px;
+    }
+
+   .recomendados__img--1 {
+       background-image: url(../images/tostadas1.jpg);
+       background-size: cover;
+       background-position: center;
+       height: 250px;
+       margin-top: 10px;
+   }
+
+   .recomendados__img--2 {
+    background-image: url(../images/tostadas2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    margin-top: 10px;
+    }
+
+    .recomendados__img--3 {
+        background-image: url(../images/tostada3.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+        margin-top: 10px;
+    }
+}
+
+@for $i from 1 through 3 {
+    $background-color: lighten($color4, $i * $i); 
+.recomendados__item#{$i} {
+  background: $background-color;
+}
+}

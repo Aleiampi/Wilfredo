@@ -1,0 +1,49 @@
+ /******************NOSOTROS--->> nuestra hisotria******/
+  
+#nuestraHistoria {
+    background-color: $color2;
+}
+
+/**********CAROUSEL / NOSOTROS****************/
+
+.galleytext__carousel {
+    max-height: 600px;
+}
+
+#carouselNos1 {
+  background-image: url(../images/chef2.jpg);
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+#carouselNos2 {
+  background-image: url(../images/chef7.jpg);
+  height: 600px;
+  background-position: bottom;
+  background-size: cover;
+}
+
+#carouselNos3 {
+  background-image: url(../images/ingredientes7.jpg);
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallerytext__text {
+  text-align: center;
+}
+
+/**********************TEAM*************************/
+
+.team__card-img {
+    filter: grayscale(1);
+    transform: scale(0.8);
+}
+
+.team__card-img:hover {
+    filter: none;
+    transform: scale(1);
+}
+

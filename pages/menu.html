@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu - Wilfredo</title>
+        <meta name="description" content="El menu de Wilfredo Restautant ofrece una amplia seleccion de platos.">
+        <meta name="keywords" content="restaurant, comidas, carnes, pastas, ensaladas, carta de vinos, cocina de autor">
+
+        <meta name="robots" content="index, follow">
+        <meta name="robots" content="all">       
+        <meta name="revisit-after" content="5 Days">
+        <meta name="googlebot" content="index, follow, all">
+
+        <meta http-equiv="Content-language" content="Es">
+        <meta name="distribution" content="Global">
+        <meta name="city" content="Buenos Aires">
+        <meta name="country" content="Argentina">
+        <meta name="resource-type" content="Document">
+        <meta name="doc-type" content="Web Page">
+        <meta name="author" content="Alejandra Iampietro">
+
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../scss/estilo.css">
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../wow/wow.js"></script>
+        <link rel="stylesheet" href="../css/animate.css">
+    </head>
+    <body>
+
+        <header class="container-fluid bg-dark">
+            <div class="row justify-content-center" id="logoHeader">
+                <img class="col-4 col-sm-3 col-md-2 mt-3" id="logo" src="../images/logoWclaro.png" alt="logo Wilfredo Restaurant">
+            </div>
+        </header>
+        <!-- navigation -->
+        <nav class="navegacion navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+            <button class="navegacion__mobil navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navegacion__menuPrincipal collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navegacion__lista navbar-nav">
+                    <li class="navegacion__item nav-item"><a class="navegacion__link nav-link" href="../index.html">Home</a></li>
+                    <li class="navegacion__item nav-item"><a class="navegacion__link nav-link active" href="#">Menu</a></li>
+                    <li class="navegacion__item nav-item"><a class="navegacion__link nav-link" href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="navegacion__item nav-item"><a class="navegacion__link nav-link" href="../pages/salon.html">Salon</a></li>
+                    <li class="navegacion__item nav-item"><a class="navegacion__link nav-link" href="../pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end navigation -->
+
+        <!-- banner -->
+        <div class="banner text-center bg-dark text-light bannerInicio" id="bannerMenu">
+            <div class="banner__texto p-5 rounded-3 text-light bannerInicio my-auto">
+                <h1 class="banner__titulo display-5 fw-bold mb-5 wow fadeInUp">Nuestra carta</h1>
+                <div class="banner__parrafo col-lg-6 mx-auto">
+                    <p class="lead mt-5 pt-5 wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Tenetur perspiciatis asperiores molestias iste officiis quae. Assumenda tempora illo aut
+                        mollitia iste porro ab ad, accusantium aliquid soluta saepe quam possimus?</p>
+                </div>
+            </div>
+        </div>
+        <!-- fin banner -->
+
+        <!-- Aqui va una seccion con 3 platos recomendados -->
+        <section class="recomendados container">
+            <h2 class="recomendados__titulo">Recomendados</h2>
+            <div class="recomendados__combo row">
+                <div class="recomendados__item col card">
+                    <div class="recomendados__img--1 card-img-top" role="img" title="plato recomendado 1"></div>
+                    <div class="recomendados__info card-body">
+                        <h4 class="recomendados__nombre card-title">nombre plato</h4>
+                        <p class="recomendados__desc card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Enim temporibus eum in, perspiciatis.</p>
+                    </div>
+                </div>
+                <div class="recomendados__item col card">
+                    <div class="recomendados__img--2 card-img-top" role="img" title="plato recomendado 2"></div>
+                    <div class="recomendados__info card-body">
+                        <h4 class="recomendados__nombre card-title">nombre plato</h4>
+                        <p class="recomendados__desc card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Enim temporibus eum in, perspiciatis.</p>
+                    </div>
+                </div>
+                <div class="recomendados__item col card">
+                    <div class="recomendados__img--3 card-img-top" role="img" title="plato recomendado 3"></div>
+                    <div class="recomendados__info card-body">
+                        <h4 class="recomendados__nombre card-title">nombre plato</h4>
+                        <p class="recomendados__desc card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Enim temporibus eum in, perspiciatis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Aqui termina una seccion con 3 platos recomendados -->
+
+        <!-- Aqui comienza el menu  -->
+        <main class="carta container">
+            <h2 class="display-4">Nuestra carta</h2>
+            <!-- Nav tabs -->
+            <ul class="carta__nav nav nav-tabs" id="nav-tab" role="tablist">
+                <li class="carta__nav-button nav-item" role="presentation">
+                    <button class="carta__nav-button nav-link active" id="nav-entradas-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-entradas" type="button" role="tab" aria-controls="nav-entradas"
+                        aria-selected="true">Entradas</button>
+                </li>
+                <li class="carta__nav-item nav-item" role="presentation">
+                    <button class="carta__nav-button nav-link" id="nav-pastas-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-pastas" type="button" role="tab" aria-controls="nav-pastas"
+                        aria-selected="false">Pastas</button>
+                </li>
+                <li class="carta__nav-item nav-item" role="presentation">
+                    <button class="carta__nav-button nav-link" id="nav-carnes-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-carnes" type="button" role="tab" aria-controls="nav-carnes"
+                        aria-selected="false">Carnes</button>
+                </li>
+                <li class="carta__nav-item nav-item" role="presentation">
+                    <button class="carta__nav-button nav-link" id="nav-postres-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-postres" type="button" role="tab" aria-controls="nav-postres"
+                        aria-selected="false">Postres</button>
+                </li>
+                <li class="carta__nav-item nav-item" role="presentation">
+                    <button class="carta__nav-button nav-link" id="nav-bebidas-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-bebidas" type="button" role="tab" aria-controls="nav-bebidas"
+                        aria-selected="false">Bebidas</button>
+                </li>
+            </ul>
+
+            <!-- Tab paneles -->
+            <div class="carta__container tab-content" id="nav-tabContent">
+                <div class="carta__panel tab-pane fade show active" id="nav-entradas" role="tabpanel"
+                    aria-labelledby="nav-entradas-tab">
+                    <h3 class="display-6">Entradas</h3>
+                    <div class="carta__contenido">
+                        <div class="carta__platos">
+                            <h4>Empanadas</h4>
+                            <p>De carne cortada a cuchillo, pollo o jamon y queso. Al horno o fritas.</p>
+                            <h4>Ensalada Wilfredo</h4>
+                            <p>Mix de verdes, tomates confitados, virutas de quesos y chauchas.</p>
+                            <h4>Provoleta Rellena</h4>
+                            <p>Provoleta rellena con tomates secos y pestos acompañado con bouquet de hojas verdes y
+                                salsa criolla</p>
+                        </div>
+                        <div class="carta__imagen-platos" id="carta__imagenPlato--1"></div>
+                    </div>
+
+                </div>
+                <div class="carta__panel tab-pane fade" id="nav-pastas" role="tabpanel"
+                    aria-labelledby="nav-pastas-tab">
+                    <h3 class="display-6">Pastas</h3>
+                    <div class="carta__contenido">
+                        <div class="carta__platos">
+                            <h4>Sorrentinos</h4>
+                            <p>Masa al huevo. Rellenos de jamon y muzzarella.</p>
+                            <h4>Raviolones</h4>
+                            <p>Masa de espinaca, rellenos de verdura y queso.</p>
+                            <h4>Penne Rigate</h4>
+                            <p>Salteado con oliva, aceitunas negras, tomate y ají.</p>
+                        </div>
+                        <div class="carta__imagen-platos" id="carta__imagenPlato--2"></div>
+                    </div>
+                </div>
+                <div class="carta__panel tab-pane fade" id="nav-carnes" role="tabpanel"
+                    aria-labelledby="nav-carnes-tab">
+                    <h3 class="display-6">Carnes</h3>
+                    <div class="carta__contenido">
+                        <div class="carta__platos">
+                            <h4>Cordero a la cazadora</h4>
+                            <p>Coccion lenta en vino tinto, parpika y vegetales, acompañado de papas rústicas.</p>
+                            <h4>Ballotina de ave</h4>
+                            <p>Pollo relleno con quesos, hierbas y hongos, con guarnicion de vegetales.</p>
+                            <h4>Truch al roquefort</h4>
+                            <p>Dorada al horno con salsa roquefort, acompañada de papas al natural.</p>
+                        </div>
+                        <div class="carta__imagen-platos" id="carta__imagenPlato--3"></div>
+                    </div>
+                </div>
+                <div class="carta__panel tab-pane fade" id="nav-postres" role="tabpanel"
+                    aria-labelledby="nav-postres-tab">
+                    <h3 class="display-6">Postres</h3>
+                    <div class="carta__contenido">
+                        <div class="carta__platos">
+                            <h4>Copa Wilfredo</h4>
+                            <p>Frutas frescas, helado de crema y salsa de frambuesas.</p>
+                            <h4>Tronador</h4>
+                            <p>Coulant de chocolate, con helado de crema americana.</p>
+                            <h4>Manzano</h4>
+                            <p>Tarta de manzanas con canela, con helado de crema.</p>
+                        </div>
+                        <div class="carta__imagen-platos" id="carta__imagenPlato--4"></div>
+                    </div>
+                </div>
+                <div class="carta__panel tab-pane fade" id="nav-bebidas" role="tabpanel"
+                    aria-labelledby="nav-bebidas-tab">
+                    <h3 class="display-6">Bebidas</h3>
+                    <div class="carta__contenido">
+                        <div class="carta__platos">
+                            <h4>Sin alcohol</h4>
+                            <p>Aguas, jugos de frutas y gaseosas</p>
+                            <h4>Vinos</h4>
+                            <p>Amplia seleccion de vinos organicos.</p>
+                            <h4>Cocktails</h4>
+                            <p>Aperol Sritz, Negroni, Fernet.</p>
+                        </div>
+                        <div class="carta__imagen-platos" id="carta__imagenPlato--5"></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- Aqui termina el menu -->
+
+        <!-- seccion con info y fotos -->
+        <section class="callToAction clearfix">
+            <div class="container">
+                <div class="callToAction__container">
+                    <img class="callToAction__img nosotros-img img-fluid mb-3 mb-lg-0 rounded" src="../images/salon16.jpg" alt="cena en nuestro salon" />
+                    <div class="callToAction__text-container nosotros-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="callToAction__head section-heading mb-4">
+                            <span class="callToAction__text--subtitulo">un espacio para disfrutar</span>
+                            <span class="callToAction__text--titulo">Visitenos</span>
+                        </h2>
+                        <p class="callToAction__text--text mb-3">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Aspernatur odio corporis cupiditate error? Fuga explicabo commodi natus sed similique
+                            cupiditate?</p>
+                        <div class="callToAction__button nosotros-button mx-auto">
+                            <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal"
+                                data-target="#myModal">Visitenos!</button>
+                        </div>
+                        <div class="callToAction__modal modal" id="myModal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="callToAction__modal-content modal-content">
+                                    <div class="callToAction__modal-header modal-header">
+                                        <h3 class="callToAction__modal--titulo modal-title">Visitenos</h3>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="callToAction__modal-body modal-body">
+                                        1234 calle central <br>
+                                        Martes a jueves de 18 a 12. <br>
+                                        Viernes a domingos 17 a 2am <br>
+                                    </div>
+                                    <div class="callToAction__modal-footer modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footerGral bg-dark text-light border-top">
+            <!-- aqui va la info de Contacto -->
+            <div class="footerGral__item footerGral__item--dire">
+                <p>1234 Calle, ciudad,</p>
+                <p>tel 123-456-7890</p>
+                <p>email@wilfredo.com</p>
+            </div>
+            <!-- aqui van los horarios de atencion -->
+            <div class="footerGral__item footerGral__item--horario">
+                <p>horarios</p>
+                <p>L a J 19 a 23</p>
+                <p>v a D 16 a 2am</p>
+            </div>
+            <!-- aqui van las redes sociales -->
+            <div class="footerGral__item footerGral__item--redes">
+                <a href="https://www.facebook.com/" rel=”nofollow” rel="noopener" rel="noreferrer" target="_blank">
+                    <img src="../images/redes-fb.png" alt="logo facebook">
+                </a>
+                <a href="https://www.instagram.com/" rel=”nofollow” rel="noopener" rel="noreferrer" target="_blank">
+                    <img src="../images/redes-ig.png" alt="logo instagram">
+                </a>
+                <a href="https://twitter.com/" rel=”nofollow” rel="noopener" rel="noreferrer" target="_blank">
+                    <img src="../images/redes-tw.png" alt="logo twitter">
+                </a>
+            </div>
+        </footer>
+
+
+
+        <!-- scripts -->
+        <script> new WOW().init(); </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+/****************CONTACTO*********************/
+.reservas {
+    @include contenedorFullWidth();
+}
+
+.reservas__formulario {
+    @include contenedorMedio();
+    @include fondoContenedor();
+    text-align: left;
+    label {
+        margin: 5px;
+    }
+
+}
+
+.reservas__info {
+    @include contenedorMedio();
+    @include fondoContenedor();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    hr {
+        height: 3px;  
+        color: $color4;
+
+    }
+
+    .reservas__info-horarios {
+
+        h4 {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        
+    }
+    
+    .reservas__info-direccion {
+        background-color: $color3;
+        color:$color1;
+        padding: 50px;
+        border-radius: 0.25rem;
+    }
+}
+
+@media (mac-width: 600px) {
+
+}

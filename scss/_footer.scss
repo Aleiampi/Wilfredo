@@ -1,0 +1,30 @@
+/*****************FOOTER************************************/
+.footerGral {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    padding: 20px 50px;
+    // align-items: center;
+}
+
+.footerGral__item {
+    width: ($ancho)/3;
+        p {
+            margin: 0px;
+        }
+}
+
+
+.footerGral__item--horario {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footerGral__item--redes {
+    width: 200px;
+    margin-left: auto;
+}
+
+
+

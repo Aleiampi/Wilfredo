@@ -1,0 +1,816 @@
+/*****GENERAL****/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #212529;
+}
+
+.botonRojo {
+  background-color: #470101;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+  margin: 4px;
+}
+
+.botonRojo:hover {
+  background-color: #6c757d;
+  border: 1px solid #470101;
+  color: #470101;
+}
+
+/****ESTILOS INDEX*****/
+.cardHorizontal__text-container {
+  background-color: #6c757d;
+}
+.cardHorizontal__text-container .card-body {
+  margin-top: 120px;
+  color: #FFF;
+  background-color: #6c757d;
+}
+
+#callToMenu {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+#imgCallToMenu1 {
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/plato2B.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -50px;
+  transition: transform 5s;
+}
+
+#imgCallToMenu1:hover {
+  transform: rotate(360deg);
+}
+
+#imgCallToMenu2 {
+  width: 200px;
+  height: 250px;
+  background-image: url(../images/plato1B.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: -50px;
+  transition: transform 4s;
+}
+
+#imgCallToMenu2:hover {
+  transform: rotate(360deg);
+}
+
+.txtCallToMenu {
+  background-color: #6c757d;
+  border-radius: 0.25rem;
+  text-align: center;
+  margin: 20px auto;
+  width: 300px;
+  display: inline-block;
+  padding: 20px;
+  font-style: italic;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  .txtCallToMenu {
+    width: 400px;
+  }
+
+  #imgCallToMenu1 {
+    width: 250px;
+    height: 250px;
+    margin-right: auto;
+  }
+
+  #imgCallToMenu2 {
+    width: 250px;
+    height: 275px;
+    margin-left: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .txtCallToMenu {
+    padding: 10%;
+  }
+
+  #imgCallToMenu1 {
+    width: 300px;
+    height: 300px;
+    margin-right: -100px;
+  }
+
+  #imgCallToMenu2 {
+    margin-top: -100px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #callToMenu {
+    width: 900px;
+  }
+
+  #imgCallToMenu2 {
+    width: 300px;
+    height: 350px;
+    margin-left: -50px;
+    margin-top: 50px;
+  }
+}
+/*********************BANNER************************/
+.bannerInicio {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0px;
+  /* height: 60vh; */
+}
+
+#bannerHome {
+  background-image: url(../images/plato11.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#bannerNos {
+  background-image: url(../images/nosotros2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#bannerMenu {
+  background-image: url(../images/ingredientes2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#bannerSalon {
+  background-image: url(../images/salon1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#bannerContacto {
+  background-image: url(../images/mapa.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*******************SECCION PLATOS RECOMENDADOS*********************/
+.recomendados {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.recomendados .recomendados__titulo {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+.recomendados .recomendados_combo {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.recomendados .recomendados__item {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 2px;
+  min-width: 300px;
+}
+.recomendados .recomendados__img--1 {
+  background-image: url(../images/tostadas1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  margin-top: 10px;
+}
+.recomendados .recomendados__img--2 {
+  background-image: url(../images/tostadas2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  margin-top: 10px;
+}
+.recomendados .recomendados__img--3 {
+  background-image: url(../images/tostada3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  margin-top: 10px;
+}
+
+.recomendados__item1 {
+  background: #4c0101;
+}
+
+.recomendados__item2 {
+  background: #5b0101;
+}
+
+.recomendados__item3 {
+  background: #740202;
+}
+
+/**********BANNER CON 4 ICONOS *************/
+.bannerIconos {
+  margin: 10px 0px;
+  background-color: #6c757d;
+}
+
+.bannerIconos__fila {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bannerIconos__item {
+  display: inline-block;
+  width: 50%;
+  border: 1px solid black;
+}
+.bannerIconos__item img {
+  max-width: 20%;
+}
+
+@media only screen and (min-width: 780px) {
+  .bannerIconos__item {
+    display: inline-block;
+    width: 25%;
+  }
+  .bannerIconos__item img {
+    max-width: 20%;
+  }
+}
+/*******************CARTA/MENU***************/
+.carta {
+  padding: 50px;
+  width: 80%;
+  margin: auto;
+}
+.carta h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.carta__nav-button {
+  color: #6c757d;
+}
+
+.carta__container {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  padding: 50px 0px;
+}
+.carta__container h3 {
+  background-color: #470101;
+  color: #fff;
+  padding-left: 10%;
+}
+
+.carta__nav {
+  justify-content: center;
+}
+
+.carta__panel {
+  padding-top: 0%;
+}
+
+.carta__contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.carta__contenido h4 {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.carta__platos {
+  margin: 50px;
+  width: 30%;
+}
+
+.carta__imagen-platos {
+  width: 50%;
+  min-width: 250px;
+  height: 300px;
+}
+
+#carta__imagenPlato--1 {
+  background-image: url(../images/plato14.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#carta__imagenPlato--2 {
+  background-image: url(../images/plato11.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#carta__imagenPlato--3 {
+  background-image: url(../images/plato10.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#carta__imagenPlato--4 {
+  background-image: url(../images/plato15.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#carta__imagenPlato--5 {
+  background-image: url(../images/salon19.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/**********CALL TO ACTION CON TEXTO FLOTANTE + IMAGEN*********/
+.callToAction {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.section-heading {
+  text-transform: uppercase;
+}
+
+.callToAction__head {
+  text-transform: uppercase;
+}
+.callToAction__head .callToAction__text--subtitulo {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.callToAction__head .callToAction__text--titulo {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.bg-faded {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.callToAction__button .btn {
+  background-color: #470101;
+  border-color: #470101;
+}
+
+.btn-xl {
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.callToAction__container {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .callToAction__img {
+    width: 75%;
+    float: right;
+  }
+
+  .callToAction__text-container {
+    left: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+  }
+
+  .callToAction__button {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .callToAction__text-container {
+    width: 45%;
+  }
+}
+/*************SALON******************/
+.infoSalon, #quoteSalon {
+  background-color: #6c757d;
+  border-radius: 0.25rem;
+  text-align: center;
+  margin: 20px auto;
+  width: 66.6666666667%;
+  margin: 3em auto;
+  padding: 3em;
+}
+
+.infoSalon__frase {
+  font-style: italic;
+  font-size: 2em;
+  color: #470101;
+}
+
+.infoSalon__descripcion {
+  padding: 5px;
+}
+
+#quoteSalon {
+  font-style: italic;
+  font-size: 1.5em;
+  color: #470101;
+}
+
+#videoSalon {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 76.9230769231%;
+  height: 600px;
+  background-color: #6c757d;
+  border-radius: 0.25rem;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.callToReservas {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #6c757d;
+  border-radius: 0.25rem;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  margin-bottom: 0px;
+}
+.callToReservas .btn {
+  background-color: #470101;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: bold;
+}
+
+/*********************GALERIA SALON***********/
+.gallerySalon {
+  background: #470101;
+  width: 80%;
+  margin: auto;
+  height: auto;
+  padding: 2%;
+  display: grid;
+}
+
+.fotoGallerySalon {
+  min-width: 200px;
+  min-height: 200px;
+  background-color: seagreen;
+  border: 1px solid;
+}
+
+.fotoGallerySalon:hover {
+  transform: scale(1.2);
+  transition: 0.7s;
+  filter: none;
+  position: relative;
+  z-index: 1;
+}
+
+.salon1 {
+  background-color: sienna;
+  background-image: url(../images/salon3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.salon2 {
+  background-color: sienna;
+  background-image: url(../images/salon7.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.salon3 {
+  background-color: sienna;
+  background-image: url(../images/salon10.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.salon4 {
+  background-color: sienna;
+  background-image: url(../images/salon2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.salon5 {
+  background-color: sienna;
+  background-image: url(../images/salon8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.salon6 {
+  background-color: sienna;
+  background-image: url(../images/salon25.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.salon7 {
+  background-color: sienna;
+  background-image: url(../images/salon20.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.salon8 {
+  background-color: sienna;
+  background-image: url(../images/salon6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.salon9 {
+  background-color: sienna;
+  background-image: url(../images/salon28.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.salon10 {
+  background-color: sienna;
+  background-image: url(../images/salon11.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.salon11 {
+  background-color: sienna;
+  background-image: url(../images/salon31.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.salon12 {
+  background-color: sienna;
+  background-image: url(../images/salon19.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .gallerySalon {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 780px) {
+  .gallerySalon {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .salon1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .salon8 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .salon4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .salon7 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 2;
+  }
+}
+.salon1 {
+  filter: grayscale(0.1);
+}
+
+.salon2 {
+  filter: grayscale(0.2);
+}
+
+.salon3 {
+  filter: grayscale(0.3);
+}
+
+.salon4 {
+  filter: grayscale(0.4);
+}
+
+.salon5 {
+  filter: grayscale(0.5);
+}
+
+.salon6 {
+  filter: grayscale(0.6);
+}
+
+.salon7 {
+  filter: grayscale(0.7);
+}
+
+.salon8 {
+  filter: grayscale(0.8);
+}
+
+.salon9 {
+  filter: grayscale(0.9);
+}
+
+.salon10 {
+  filter: grayscale(1);
+}
+
+.salon11 {
+  filter: grayscale(1.1);
+}
+
+.salon12 {
+  filter: grayscale(1.2);
+}
+
+/******************NOSOTROS--->> nuestra hisotria******/
+#nuestraHistoria {
+  background-color: #6c757d;
+}
+
+/**********CAROUSEL / NOSOTROS****************/
+.galleytext__carousel {
+  max-height: 600px;
+}
+
+#carouselNos1 {
+  background-image: url(../images/chef2.jpg);
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+#carouselNos2 {
+  background-image: url(../images/chef7.jpg);
+  height: 600px;
+  background-position: bottom;
+  background-size: cover;
+}
+
+#carouselNos3 {
+  background-image: url(../images/ingredientes7.jpg);
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallerytext__text {
+  text-align: center;
+}
+
+/**********************TEAM*************************/
+.team__card-img {
+  filter: grayscale(1);
+  transform: scale(0.8);
+}
+
+.team__card-img:hover {
+  filter: none;
+  transform: scale(1);
+}
+
+/*****************FOOTER************************************/
+.footerGral {
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  padding: 20px 50px;
+}
+
+.footerGral__item {
+  width: 33.3333333333%;
+}
+.footerGral__item p {
+  margin: 0px;
+}
+
+.footerGral__item--horario {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footerGral__item--redes {
+  width: 200px;
+  margin-left: auto;
+}
+
+/****************CONTACTO*********************/
+.reservas {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.reservas__formulario {
+  width: 25%;
+  min-width: 400px;
+  margin: 20px auto;
+  padding: 50px;
+  background-color: #6c757d;
+  border-radius: 0.25rem;
+  text-align: center;
+  margin: 20px auto;
+  text-align: left;
+}
+.reservas__formulario label {
+  margin: 5px;
+}
+
+.reservas__info {
+  width: 25%;
+  min-width: 400px;
+  margin: 20px auto;
+  padding: 50px;
+  background-color: #6c757d;
+  border-radius: 0.25rem;
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.reservas__info hr {
+  height: 3px;
+  color: #470101;
+}
+.reservas__info .reservas__info-horarios h4 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.reservas__info .reservas__info-direccion {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #212529;
+  padding: 50px;
+  border-radius: 0.25rem;
+}
+
+.page404 {
+  margin: 300px auto;
+  display: flex;
+  color: rgba(255, 255, 255, 0.7);
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #6c757d;
+  border-radius: 0.25rem;
+  text-align: center;
+  margin: 20px auto;
+}
+.page404 img {
+  margin: 25px auto;
+  height: auto;
+}
+
+.page404__text {
+  display: inline-block;
+  padding: 50px;
+  text-align: center;
+}
+.page404__text ul {
+  text-align: left;
+}
+.page404__text a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#logo404 {
+  width: 50%;
+}/*# sourceMappingURL=estilo.css.map */

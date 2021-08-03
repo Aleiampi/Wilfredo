@@ -1,0 +1,46 @@
+.page404 {
+    margin: 300px auto;
+    display: flex;
+    color: $color3;
+    flex-wrap: nowrap;
+    // width: $ancho -200;
+    // height: 100%;
+    align-items: center;
+    @include fondoContenedor;
+
+
+    img {
+        margin: 25px auto;
+        // float: left;
+        // width: 50%;
+        height: auto;
+        // margin: 100px;
+    }
+}
+
+.page404__contenedor {
+    // margin-top: 200px;
+}
+
+.page404__text {
+    display: inline-block;
+    // width: 50%;
+    padding: 50px;
+    // margin-left: 100px;
+    text-align: center;
+
+    ul {
+        text-align: left;
+    }
+
+
+
+    a {
+        text-decoration: none;
+        color: $color3;
+    }
+}
+
+#logo404 {
+    width: 50%;
+}

@@ -1,0 +1,114 @@
+/****ESTILOS INDEX*****/
+
+.cardHorizontal__text-container {
+    background-color: $color2;
+
+
+    .card-body {
+        margin-top: 120px;
+        color: #FFF;
+        background-color: #6c757d;
+    }
+    
+}
+
+#callToMenu {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+}
+
+#imgCallToMenu1 {
+        width: 200px;
+        height: 200px;
+        background-image: url(../images/plato2B.png);
+        background-size:cover;
+        background-position: center;
+        margin-bottom: -50px;
+        transition: transform 5s;
+}
+
+#imgCallToMenu1:hover {
+        transform: rotate(360deg);
+}
+
+#imgCallToMenu2 {
+        width: 200px;
+        height: 250px;
+        background-image: url(../images/plato1B.png);
+        background-size: cover;
+        background-position: center;
+        margin-top: -50px;
+        transition: transform 4s;
+}
+    
+    #imgCallToMenu2:hover {
+        transform: rotate(360deg);
+}
+
+.txtCallToMenu {
+        @include fondoContenedor;
+        width: 300px;
+        display: inline-block;
+        padding: 20px;
+        font-style: italic;
+        padding: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    .txtCallToMenu {
+        width: 400px;
+    }
+
+    #imgCallToMenu1 {
+        width: 250px;
+        height: 250px;
+        margin-right: auto;
+    }
+
+    #imgCallToMenu2 {
+        width: 250px;
+        height: 275px;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .txtCallToMenu {
+        padding: 10%;
+    }
+
+    #imgCallToMenu1 {
+        width: 300px;
+        height: 300px;
+        margin-right: -100px;
+    }
+
+    #imgCallToMenu2 {
+        margin-top: -100px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    #callToMenu {
+        width: 900px;
+    }
+
+    #imgCallToMenu2 {
+        width: 300px;
+        height: 350px;
+        margin-left: -50px;
+        margin-top: 50px;
+
+    }
+    
+}
+
