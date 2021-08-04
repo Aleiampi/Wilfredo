@@ -1,12 +1,18 @@
 /****************CONTACTO*********************/
 .reservas {
-    @include contenedorFullWidth();
+    // width: $ancho;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    box-sizing: border-box;
 }
 
 .reservas__formulario {
-    @include contenedorMedio();
+    // @include contenedorMedio();
     @include fondoContenedor();
     text-align: left;
+    padding: 10px;
     label {
         margin: 5px;
     }
@@ -14,11 +20,12 @@
 }
 
 .reservas__info {
-    @include contenedorMedio();
+    // @include contenedorMedio();
     @include fondoContenedor();
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 10px;
 
     hr {
         height: 3px;  
@@ -44,6 +51,10 @@
     }
 }
 
-@media (mac-width: 600px) {
+@media (max-width: 600px) {
+    .reservas {
+        width: 90%;
+        margin: 10px;
 
+    }
 }
