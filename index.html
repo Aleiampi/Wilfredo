@@ -32,8 +32,8 @@
 
         <header class="container-fluid bg-dark">
             <div class="row justify-content-center" id="logoHeader">
-                <img class="col-4 col-sm-3 col-md-2 mt-3" id="logo" src="images/logoWclaro.png" alt="logo Wilfredo
-                    Restaurante">
+                <a href="#" class="col-4 col-sm-3 col-md-2 mt-3" id="logo" ><img class="col-12" src="images/logoWclaro.png" alt="logo Wilfredo
+                    Restaurante"></a>
             </div>
         </header>
         <!-- navigation -->
@@ -71,40 +71,74 @@
         <!-- fin banner -->
 
 
-        <!-- Aqui va una seccion con platos recomendados, con link al menu -->
-        <section class="recomendados container p-2 text-center">
-            <h2 class="recomendados__titulo row m-5">Recomendados</h2>
-            <div class="row">
-                <article class="recomendados__item card col platoRec">
-                    <img class="recomendados__img card-img-top" src="images/tostadas1.jpg" alt="imagen plato recomendado
-                        1">
-                    <div class="recomendados__info card-body">
-                        <h3 class="recomendados__nombre card-title">Plato 1</h3>
-                        <p class="recomendados__desc card-text">Descripcion plato recomendado</p>
-                        <a href="pages/menu.html" class="recomendados__button btn btn-secondary botonRojo">Ver mas</a>
+                <!-- Aqui va una seccion con 3 platos recomendados -->
+                <div class="destacados">
+
+                    <h2>Recomendados del chef</h2>
+                
+                    <div class="destacados__contenedor">
+                
+                        <div class="destacados__flipcard-container"> <!-- cardbox -->
+                
+                            <div class="destacados__flipcard">
+                                <div class="destacados__flipcard--front  card" id="destacados1">
+                                    <h3>Plato 1</h3>
+                                    <p>Ver descripcion</p>
+                                    <strong>&#x21bb;</strong>
+                                  </div>
+                
+                                <div class="destacados__flipcard--back  card">
+                                    <h3>Plato 1</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto at magnam incidunt. Debitis culpa cumque explicabo nulla neque. Harum?</p>
+                                    <a href="pages/menu.html">Ver mas</a>
+                                </div>
+                            </div>
+                
+                        </div>
+                
+                        <div class="destacados__flipcard-container"> <!-- cardbox -->
+                
+                            <div class="destacados__flipcard">
+                                <div class="destacados__flipcard--front  card" id="destacados2">
+                                    <h3>Plato 2</h3>
+                                    <p>Ver descripcion</p>
+                                    <strong>&#x21bb;</strong>
+                                  </div>
+                
+                                <div class="destacados__flipcard--back  card">
+                                    <h3>Plato 2</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto at magnam incidunt. Debitis culpa cumque explicabo nulla neque. Harum?</p>
+                                    <a href="pages/menu.html">Ver mas</a>
+                                </div>
+                            </div>
+                
+                        </div>
+                        
+                        <div class="destacados__flipcard-container"> <!-- cardbox -->
+                
+                            <div class="destacados__flipcard">
+                                <div class="destacados__flipcard--front  card" id="destacados3">
+                                    <h3>Plato 3</h3>
+                                    <p>Ver descripcionp</p>
+                                    <strong>&#x21bb;</strong>
+                                  </div>
+                
+                                <div class="destacados__flipcard--back  card">
+                                    <h3>Plato 3</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iusto at magnam incidunt. Debitis culpa cumque explicabo nulla neque. Harum?</p>
+                                    <a href="pages/menu.html">Ver mas</a>
+                                </div>
+                            </div>
+                
+                        </div>        
+                
+                
                     </div>
-                </article>
-                <article class="recomendados__item card col platoRec">
-                    <img class="recomendados__img card-img-top" src="images/tostadas2.jpg" alt="imagen plato recomendado
-                        2">
-                    <div class="recomendados__info card-body">
-                        <h3 class="recomendados__nombre card-title">Plato 2</h3>
-                        <p class="recomendados__desc card-text">Descripcion plato recomendado</p>
-                        <a href="pages/menu.html" class="recomendados__button btn btn-secondary botonRojo">Ver mas</a>
-                    </div>
-                </article>
-                <article class="recomendados__item card col platoRec">
-                    <img class="recomendados__img card-img-top" src="images/tostada3.jpg" alt="imagen plato recomendado
-                        3">
-                    <div class="recomendados__info card-body">
-                        <h3 class="recomendados__nombre card-title">Plato 3</h3>
-                        <p class="recomendados__desc card-text">Descripcion plato recomendado</p>
-                        <a href="pages/menu.html" class="recomendados__button btn btn-secondary botonRojo">Ver mas</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <!-- Fin seccion recomendados -->
+                
+                
+                
+                </div>
+                <!-- Aqui termina una seccion con 3 platos recomendados -->
 
         <!-- Aqui va una seccion con info dividida en 4 items -->
         <section class="container-fluid bg-secondary text-light text-center">
@@ -146,8 +180,25 @@
         <!-- Fin call to action -->
 
 
+        <div class="parallax">
+        </div>
+        <div class="parallax__texto">
+            <h3 class="display-6">Veni a visitarnos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam esse dolor sint voluptatem sit placeat,
+                animi vel quidem. Ad, quod!</p>
+            <a class="btn botonRojo" href="../pages/contacto.html" role="button">Reservas</a>
+                   <!-- Aqui va un link a reservas -->
+        </div>
+        <div class="parallax">
+        </div>
+
+
+
+
+
+
         <!-- Aqui va una seccion que habla del salon con link     -->
-        <div class="cardHorizontal card mt-5 mb-5 bg-secondary text-light">
+        <!-- <div class="cardHorizontal card mt-5 mb-5 bg-secondary text-light">
             <div class="row g-0">
                 <div class="cardHorizontal__img-container col-md-6">
                     <img src="images/salon1.jpg" class="cardHorizontal__img img-fluid rounded-start" alt="Nuestro
@@ -163,11 +214,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- fin salon -->
 
         <!-- Aqui va una seccion acerca de nosotros con link a nosotros -->
-        <section class="callToNosotos cardHorizontal card mt-5 mb-5 bg-secondary text-light" style="max-width: 600px; margin:
+        <!-- <section class="callToNosotos cardHorizontal card mt-5 mb-5 bg-secondary text-light" style="max-width: 600px; margin:
             auto;">
             <div class="row g-0">
                 <div class="cardHorizontal__img-container col-md-6">
@@ -184,7 +235,7 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
         <!-- fin nosotros -->
 
         <footer class="footerGral bg-dark text-light border-top">

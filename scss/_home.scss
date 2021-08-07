@@ -112,3 +112,20 @@
     
 }
 
+.parallax {
+    background-image: url(../images/salon7.jpg);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+.parallax__texto {
+    background-color: $color2;
+    text-align: center;
+    padding: 50px;
+
+}

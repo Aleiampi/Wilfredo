@@ -1,12 +1,13 @@
 /**********BANNER CON 4 ICONOS *************/
 .bannerIconos {
-    margin: 10px 0px;
-    background-color: $color2;
+    margin: 50px 0px;
+    // background-color: $color2;
 
 }
 .bannerIconos__fila {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .bannerIconos__item {
