@@ -194,67 +194,144 @@ body {
   background-position: center;
 }
 
-/*******************SECCION PLATOS RECOMENDADOS*********************/
-.recomendados {
-  width: 80%;
+/******** PLATOS DESTACADOS FLIPCARD******/
+.destacados__contenedor {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.recomendados__titulo {
-  text-align: center;
-  margin-top: 20px;
-  color: #fff;
-}
-
-.recomendados_combo {
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.recomendados__item {
-  background-color: rgba(255, 255, 255, 0.7);
-  margin: 2px;
+.destacados__flipcard-container {
+  float: left;
+  margin: 1% auto;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 80%;
   min-width: 300px;
 }
 
-.recomendados__img--1 {
+.destacados__flipcard-container:hover .destacados__flipcard {
+  transform: rotateY(180deg);
+}
+
+.destacados__flipcard {
+  background: #222;
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+
+.destacados__flipcard .destacados__flipcard--front,
+.destacados__flipcard .destacados__flipcard--back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.destacados__flipcard--front h3 {
+  margin-top: 20%;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+.destacados__flipcard--front p {
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+.destacados__flipcard .destacados__flipcard--front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.destacados__flipcard .destacados__flipcard--back {
+  transform: rotateY(180deg);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #212529;
+  padding: 25px;
+}
+
+.destacados__flipcard .destacados__flipcard--back a {
+  padding: 0.3em 0.5em;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.destacados__flipcard .destacados__flipcard--back a:hover {
+  background: #fff;
+  color: #333;
+  text-shadow: 0 0 1px #333;
+}
+
+.destacados__flipcard:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+.destacados__flipcard:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+
+.destacados__flipcard:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+#destacados1 {
   background-image: url(../images/tostadas1.jpg);
   background-size: cover;
   background-position: center;
-  height: 250px;
-  margin-top: 10px;
 }
 
-.recomendados__img--2 {
+#destacados2 {
   background-image: url(../images/tostadas2.jpg);
   background-size: cover;
   background-position: center;
-  height: 250px;
-  margin-top: 10px;
 }
 
-.recomendados__img--3 {
+#destacados3 {
   background-image: url(../images/tostada3.jpg);
   background-size: cover;
   background-position: center;
-  height: 250px;
-  margin-top: 10px;
 }
 
-.recomendados__item1 {
-  background: #4c0101;
+@media screen and (min-width: 680px) {
+  .destacados__flipcard-container {
+    width: 30%;
+  }
 }
-
-.recomendados__item2 {
-  background: #5b0101;
-}
-
-.recomendados__item3 {
-  background: #740202;
-}
-
 /**********BANNER CON 4 ICONOS *************/
 .bannerIconos {
   margin: 50px 0px;
@@ -866,143 +943,4 @@ body {
 
 #logo404 {
   width: 50%;
-}
-
-/******** PLATOS DESTACADOS FLIPCARD********/
-.destacados__contenedor {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.destacados__flipcard-container {
-  float: left;
-  margin: 1% auto;
-  perspective: 800px;
-  transition: all 0.3s ease 0s;
-  width: 80%;
-  min-width: 300px;
-}
-
-.destacados__flipcard-container:hover .destacados__flipcard {
-  transform: rotateY(180deg);
-}
-
-.destacados__flipcard {
-  background: #222;
-  cursor: default;
-  height: 300px;
-  transform-style: preserve-3d;
-  transition: transform 0.4s ease 0s;
-  width: 100%;
-  -webkit-animation: giro 1s 1;
-  animation: giro 1s 1;
-}
-
-.destacados__flipcard .destacados__flipcard--front,
-.destacados__flipcard .destacados__flipcard--back {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  box-sizing: border-box;
-  color: white;
-  display: block;
-  height: 100%;
-  padding: 0.8em;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-.destacados__flipcard--front h3 {
-  margin-top: 20%;
-  background-color: rgba(0, 0, 0, 0.514);
-}
-.destacados__flipcard--front p {
-  background-color: rgba(0, 0, 0, 0.514);
-}
-
-.destacados__flipcard .destacados__flipcard--front strong {
-  background: #fff;
-  border-radius: 100%;
-  color: #222;
-  font-size: 1.5em;
-  line-height: 30px;
-  padding: 0 7px 4px 6px;
-}
-
-.destacados__flipcard .destacados__flipcard--back {
-  transform: rotateY(180deg);
-  background-color: rgba(255, 255, 255, 0.7);
-  color: #212529;
-  padding: 25px;
-}
-
-.destacados__flipcard .destacados__flipcard--back a {
-  padding: 0.3em 0.5em;
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 1px;
-  font-size: 0.9em;
-  transition: all 0.2s ease 0s;
-}
-
-.destacados__flipcard .destacados__flipcard--back a:hover {
-  background: #fff;
-  color: #333;
-  text-shadow: 0 0 1px #333;
-}
-
-.destacados__flipcard:nth-child(2) .card {
-  -webkit-animation: giro 1.5s 1;
-  animation: giro 1.5s 1;
-}
-
-.destacados__flipcard:nth-child(3) .card {
-  -webkit-animation: giro 2s 1;
-  animation: giro 2s 1;
-}
-
-.destacados__flipcard:nth-child(4) .card {
-  -webkit-animation: giro 2.5s 1;
-  animation: giro 2.5s 1;
-}
-
-@-webkit-keyframes giro {
-  from {
-    transform: rotateY(180deg);
-  }
-  to {
-    transform: rotateY(0deg);
-  }
-}
-@keyframes giro {
-  from {
-    transform: rotateY(180deg);
-  }
-  to {
-    transform: rotateY(0deg);
-  }
-}
-#destacados1 {
-  background-image: url(../images/tostadas1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-#destacados2 {
-  background-image: url(../images/tostadas2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-#destacados3 {
-  background-image: url(../images/tostada3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-@media screen and (min-width: 680px) {
-  .destacados__flipcard-container {
-    width: 30%;
-  }
 }/*# sourceMappingURL=estilo.css.map */
