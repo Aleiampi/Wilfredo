@@ -2,8 +2,8 @@
 .reservas {
     // width: $ancho;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
     padding: 50px;
     box-sizing: border-box;
 }
@@ -13,6 +13,7 @@
     @include fondoContenedor();
     text-align: left;
     padding: 10px;
+    min-width: 350px;
     label {
         margin: 5px;
     }
@@ -51,10 +52,10 @@
     }
 }
 
-@media (max-width: 600px) {
-    .reservas {
-        width: 90%;
-        margin: 10px;
+// @media (max-width: 600px) {
+//     .reservas {
+//         width: 90%;
+//         margin: 10px;
 
-    }
-}
+//     }
+// }

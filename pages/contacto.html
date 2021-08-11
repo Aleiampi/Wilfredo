@@ -5,11 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto - Wilfredo </title>
-        <meta name="description" content="Contactese con Wilfredo Restaurant desde nuestra pagina, o venga a visitarnos.">
+        <meta name="description" content="Contactese con Wilfredo Restaurant desde nuestra pagina, o venga a
+            visitarnos.">
         <meta name="keywords" content="restaurant, contacto, ubicacion, reservas, telefono, email">
 
         <meta name="robots" content="index, follow">
-        <meta name="robots" content="all">       
+        <meta name="robots" content="all">
         <meta name="revisit-after" content="5 Days">
         <meta name="googlebot" content="index, follow, all">
 
@@ -33,22 +34,27 @@
         <!-- Aqui va la imagen del logo con link al home -->
         <header class="container-fluid bg-dark">
             <div class="row justify-content-center" id="logoHeader">
-                <a href="../index.html" class="col-4 col-sm-3 col-md-2 mt-3" id="logo" ><img class="col-12" src="../images/logoWclaro.png" alt="logo Wilfredo
-                    Restaurante"></a>
+                <a href="../index.html" class="col-4 col-sm-3 col-md-2 mt-3" id="logo"><img class="col-12"
+                        src="../images/logoWclaro.png" alt="logo Wilfredo
+                        Restaurante"></a>
             </div>
         </header>
         <!-- navigation -->
         <nav class="navegacion navbar sticky-top navbar-expand-md navbar-dark bg-dark">
             <button class="navegacion__mobil navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle
+                navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navegacion__menuPrincipal collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navegacion__lista navbar-nav">
                     <li class="navegacion__item nav-item"><a class="navegacion__link nav-link" href="../index.html">Home</a></li>
-                    <li class="navegacion__item nav-item"><a class="navegacion__link nav-link" href="../pages/menu.html">Menu</a></li>
-                    <li class="navegacion__item nav-item"><a class="navegacion__link nav-link" href="../pages/nosotros.html">Nosotros</a></li>
-                    <li class="navegacion__item nav-item"><a class="navegacion__link nav-link" href="../pages/salon.html">Salon</a></li>
+                    <li class="navegacion__item nav-item"><a class="navegacion__link nav-link"
+                            href="../pages/menu.html">Menu</a></li>
+                    <li class="navegacion__item nav-item"><a class="navegacion__link nav-link"
+                            href="../pages/nosotros.html">Nosotros</a></li>
+                    <li class="navegacion__item nav-item"><a class="navegacion__link nav-link"
+                            href="../pages/salon.html">Salon</a></li>
                     <li class="navegacion__item nav-item"><a class="navegacion__link nav-link active" href="#">Contacto</a></li>
                 </ul>
             </div>
@@ -69,73 +75,75 @@
         <!-- fin banner -->
 
         <!-- Contenido -->
-        <!-- Aqui va un formulario de reservas -->
-        <main class="reservas text-light contacto">
-            <section class="reservas__formulario">
-                <!--Aqui va un formulario de reservas-->
-                <form action="actionform.php" method="post"
-                    enctype="application/x-www-form-urlencoded" class="reservas__formulario-formulario">
-                    <h2>Reservas</h2>
-                    <label for="nombreReserva">Nombre: </label>
-                    <input type="text" name="nombreReserva" id="nombreReserva"><br>
-                    <label for="email">Email: </label>
-                    <input type="text" name="email" id="email" required><br>
-                    <label for="telefono">Telefono</label>
-                    <input type="tel" name="telefono" id="telefono" required><br>
-                    <label for="fechareserva">Fecha</label>
-                    <input type="date" name="fechaReserva" id="fechaReserva"><br>
-                    <label for="comensales">Comensales</label>
-                    <select name="comensales" id="comensales">
-                        <option>2</option>
-                        <option>4</option>
-                        <option>6</option>
-                    </select><br>
-                    <label for="comentariosReserva">Comentarios</label><br>
-                    <textarea name="comentariosReserva" id="comentariosReserva"
-                        cols="40" rows="10"></textarea><br>
-                    <p>Recibiras la confirmacion via email. Hasta no recibirla, no
-                        esta confirmada
-                    </p>
-                    <label for="confirmarRserva">Entendido!</label>
-                    <input type="checkbox" name="confirmarRserva"
-                        id="confirmarRserva"
-                        required><br>
-                    <input type="submit" name="Enviar"  class="btn botonRojo">
-                    <input type="reset" name="reset" class="btn botonRojo">
-                </form>
-            </section>
-            <!-- Aqui termina el formulario de reservas -->
 
-            <!-- Aqui va una seccion con horario e info de contacto -->
-            <section class="reservas__info infoContacto">
-                <div class="reservas__info-horarios horarios">
-                    <h4>Nuestos horarios</h4>
-                    <p>Lunes a Jueves 19 a 23</p>
-                    <p>viernes a Domingo 16 a 2am</p>
-                </div>
-                <hr>  
-                <div class="reservas__info-direccion direccion">
-                    <p>1234 Calle, ciudad,</p>
-                    <p>tel 123-456-7890</p>
-                    <p>email@wilfredo.com</p>
-                </div>
-            </section>
-            <!-- Aqui va una seccion con horario e info de contacto -->
+        <main class="container reservas text-light contacto">
+            <div class="row">
+
+                <!-- Aqui va una seccion con horario e info de contacto -->
+                <section class="reservas__info infoContacto col-md-5 col-sm-10">
+                    <div class="reservas__info-horarios horarios">
+                        <h4>Nuestos horarios</h4>
+                        <p>Lunes a Jueves 19 a 23</p>
+                        <p>viernes a Domingo 16 a 2am</p>
+                    </div>
+                    <hr>
+                    <div class="reservas__info-direccion direccion">
+                        <p>1234 Calle, ciudad,</p>
+                        <p>tel 123-456-7890</p>
+                        <p>email@wilfredo.com</p>
+                    </div>
+                </section>
+                <!-- Aqui va una seccion con horario e info de contacto -->
+                <!-- Aqui va un formulario de reservas -->
+                <section class="reservas__formulario col-md-5 col-sm-10">
+                    <!--Aqui va un formulario de reservas-->
+                    <form action="actionform.php" method="post"
+                        enctype="application/x-www-form-urlencoded" class="reservas__formulario-formulario">
+                        <h2>Reservas</h2>
+                        <label for="nombreReserva">Nombre: </label>
+                        <input type="text" name="nombreReserva" id="nombreReserva"><br>
+                        <label for="email">Email: </label>
+                        <input type="text" name="email" id="email" required><br>
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" name="telefono" id="telefono" required><br>
+                        <label for="fechareserva">Fecha</label>
+                        <input type="date" name="fechaReserva" id="fechaReserva"><br>
+                        <label for="comensales">Comensales</label>
+                        <select name="comensales" id="comensales">
+                            <option>2</option>
+                            <option>4</option>
+                            <option>6</option>
+                        </select><br>
+                        <label for="comentariosReserva">Comentarios</label><br>
+                        <textarea name="comentariosReserva" id="comentariosReserva"
+                            cols="40" rows="10"></textarea><br>
+                        <p>Recibiras la confirmacion via email. Hasta no recibirla, no
+                            esta confirmada
+                        </p>
+                        <label for="confirmarRserva">Entendido!</label>
+                        <input type="checkbox" name="confirmarRserva"
+                            id="confirmarRserva"
+                            required><br>
+                        <input type="submit" name="Enviar" class="btn botonRojo">
+                        <input type="reset" name="reset" class="btn botonRojo">
+                    </form>
+                </section>
+                <!-- Aqui termina el formulario de reservas -->
+            </div>
+
         </main>
 
 
         <footer class="footerGral bg-dark text-light border-top">
-            <!-- <div class="row"> -->
             <!-- aqui va la info de Contacto -->
             <div class="footerGral__item footerGral__item--dire">
                 <p>1234 Calle, ciudad,</p>
                 <p>tel 123-456-7890</p>
                 <p>email@wilfredo.com</p>
             </div>
-           
             <!-- aqui van los horarios de atencion -->
             <div class="footerGral__item footerGral__item--horario">
-                <h4>horarios</h4>
+                <p>horarios</p>
                 <p>L a J 19 a 23</p>
                 <p>v a D 16 a 2am</p>
             </div>

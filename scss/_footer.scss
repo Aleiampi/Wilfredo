@@ -10,7 +10,7 @@
 }
 
 .footerGral__item {
-    width: ($ancho)/3;
+    width: ($ancho)/2;
         p {
             margin: 0px;
         }
@@ -24,7 +24,24 @@
 
 .footerGral__item--redes {
     width: 200px;
-    margin-left: auto;
+    max-height: 36px;
+    padding: 10px auto 0px auto;
+    // margin-left: auto;
+
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        width: 30px;
+        height: 30px;
+        margin: 0px 5px;
+    }
+
+    img:hover {
+        transform: scale(1.5);
+        filter: invert(100%);
+    }
 }
 
 

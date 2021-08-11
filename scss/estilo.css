@@ -286,8 +286,8 @@ body {
 }
 /*******************CARTA/MENU***************/
 .carta {
-  padding: 50px;
-  width: 80%;
+  padding: 5%;
+  width: 90%;
   margin: auto;
 }
 .carta h2 {
@@ -303,7 +303,7 @@ body {
 .carta__container {
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
-  padding: 50px 0px;
+  padding: 5px 0px;
 }
 .carta__container h3 {
   background-color: #470101;
@@ -324,7 +324,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 5%;
 }
 .carta__contenido h4 {
   text-transform: uppercase;
@@ -333,8 +333,7 @@ body {
 }
 
 .carta__platos {
-  margin: 50px;
-  width: 30%;
+  margin: 5%;
 }
 
 .carta__imagen-platos {
@@ -730,9 +729,20 @@ body {
 }
 
 /**********************TEAM*************************/
+.team__card {
+  text-align: center;
+}
+
+.card-img-top {
+  background-color: red;
+}
+
 .team__card-img {
   filter: grayscale(1);
   transform: scale(0.8);
+  max-height: 300px;
+  max-width: 200px;
+  margin: auto;
 }
 
 .team__card-img:hover {
@@ -751,7 +761,7 @@ body {
 }
 
 .footerGral__item {
-  width: 33.3333333333%;
+  width: 50%;
 }
 .footerGral__item p {
   margin: 0px;
@@ -764,14 +774,25 @@ body {
 
 .footerGral__item--redes {
   width: 200px;
-  margin-left: auto;
+  max-height: 36px;
+  padding: 10px auto 0px auto;
+}
+.footerGral__item--redes a {
+  text-decoration: none;
+}
+.footerGral__item--redes img {
+  width: 30px;
+  height: 30px;
+  margin: 0px 5px;
+}
+.footerGral__item--redes img:hover {
+  transform: scale(1.5);
+  filter: invert(100%);
 }
 
 /****************CONTACTO*********************/
 .reservas {
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
   padding: 50px;
   box-sizing: border-box;
 }
@@ -783,6 +804,7 @@ body {
   margin: 20px auto;
   text-align: left;
   padding: 10px;
+  min-width: 350px;
 }
 .reservas__formulario label {
   margin: 5px;
@@ -813,12 +835,6 @@ body {
   border-radius: 0.25rem;
 }
 
-@media (max-width: 600px) {
-  .reservas {
-    width: 90%;
-    margin: 10px;
-  }
-}
 .page404 {
   margin: 300px auto;
   display: flex;

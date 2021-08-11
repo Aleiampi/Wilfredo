@@ -1,8 +1,8 @@
 /*******************CARTA/MENU***************/
 
 .carta {
-    padding: 50px;
-    width: 80%;
+    padding: 5%;
+    width: 90%;
     margin: auto;
 
     h2 {
@@ -16,10 +16,11 @@
     color: $color2;
 }
 
+
 .carta__container {
     background-color: $color3;
     color: black;
-    padding: 50px 0px;
+    padding: 5px 0px;
     
     h3 {
         background-color: $color4;
@@ -40,7 +41,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 5%;
 
     h4 {
         text-transform: uppercase;
@@ -50,8 +51,8 @@
 }
 
 .carta__platos {
-    margin: 50px;
-    width: 30%;
+    margin: 5%;
+    // width: 30%;
 }
 
 .carta__imagen-platos {

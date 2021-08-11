@@ -1,0 +1,359 @@
+// .carta__wrapper {
+//     width: 100%;
+//     padding: 60px 0;
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     // background-color: rgba(0, 0, 0, 0.85);
+// }
+
+// [type="radio"]:checked,
+// [type="radio"]:not(:checked) {
+//   position: absolute;
+//   left: -9999px;
+// }
+
+// [type="radio"]:checked + label,
+// [type="radio"]:not(:checked) + label {
+//   position: relative;
+//   padding-left: 12px;
+//   padding-right: 12px;
+//   letter-spacing: 3px;
+//   cursor: pointer;
+//   line-height: 30px;
+//   font-size: 15px;
+//   text-transform: uppercase;
+//   font-weight: 500;
+//   color: #fff;
+//   margin-right: 10px;
+//   margin-left: 10px;
+//   -webkit-transition: all 0.2s ease;
+//   transition: all 0.2s ease;
+// }
+
+// [type="radio"]:checked + label:after,
+// [type="radio"]:not(:checked) + label:after {
+//   content: "";
+//   border-radius: 2px;
+//   height: 20px;
+//   padding: 5px;
+//   background-color: #e74c3c;
+//   position: absolute;
+//   bottom: 0;
+//   left: 6px;
+//   top: -4px;
+//   z-index: -1;
+//   -webkit-transition: all 0.2s ease;
+//   transition: all 0.2s ease;
+// }
+
+// [type="radio"]:not(:checked) + label:after {
+//     opacity: 0;
+//     width: 0;
+// }
+
+// [type="radio"]:checked + label:after {
+//    opacity: 1;
+//    width: calc(100% - 24px);
+// }
+
+// .checkbox-todos:checked + label:after,
+// .checkbox-todos:not(:checked) + label:after {
+//     background-color: hotpink;
+// }
+
+// .checkbox-entradas:checked + label:after,
+// .checkbox-entradas:not(:checked) + label:after {
+//     background-color:green;
+// }
+
+// .checkbox-pastas:checked + label:after,
+// .checkbox-pastas:not(:checked) + label:after {
+//     background-color:indigo;
+// }
+
+// .checkbox-carnes:checked + label:after,
+// .checkbox-carnes:not(:checked) + label:after {
+//     background-color:lightseagreen;
+// }
+
+// .checkbox-postres:checked + label:after,
+// .checkbox-postres:not(:checked) + label:after {
+//     background-color:maroon;
+// }
+
+// .checkbox-bebidas:checked + label:after,
+// .checkbox-bebidas:not(:checked) + label:after {
+//     background-color:slateblue;
+// }
+
+// .checkbox-todos:checked + label {
+//     margin-left: 17px;
+// }
+
+// .separador {
+//     width: 100%;
+//     height: 30px;
+// }
+
+// .carta__items {
+//     display: flex;
+//     flex-wrap: wrap;
+//     width: 800px
+// }
+
+// .carta__plato {
+//     border-radius: 4px;
+//     box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+//     -webkit-transition: all 0.2s linear;
+//     transition: all 0.3s linear;
+// }
+
+// .carta__plato.entradas {
+//     border: 3px solid #f1c40f;
+// }
+
+// .carta__plato.pastas {
+//     border: 3px solid #ff932b;
+// }
+
+// .carta__plato.carta__plato.carnes {
+//     border: 3px solid #64e1fe;
+// }
+
+// .carta__plato.postres {
+//     border: 3px solid #6edbbe;
+// }
+
+// .carta__plato.bebidas {
+//     border: 3px solid #e75139;
+// }
+
+// .carta__plato.entradas,
+// .carta__plato.pastas,
+// .carta__plato.carnes,
+// .carta__plato.postres,
+// .carta__plato.bebidas {
+//     opacity: 0;
+//     transform: scale(0);
+//     padding: 0px;
+//     margin: 0px;
+//     visibility: hidden;
+//     border-width: 0px;
+// }
+
+// .checkbox-todos:checked ~ .carta__items .carta__plato.entradas,
+// .checkbox-todos:checked ~ .carta__items .carta__plato.pastas,
+// .checkbox-todos:checked ~ .carta__items .carta__plato.carnes,
+// .checkbox-todos:checked ~ .carta__items .carta__plato.postres,
+// .checkbox-todos:checked ~ .carta__items .carta__plato.bebidas,
+// .checkbox-entradas:checked ~ .carta__items .carta__plato.entradas,
+// .checkbox-pastas:checked ~ .carta__items .carta__plato.pastas,
+// .checkbox-carnes:checked ~ .carta__items .carta__plato.carnes,
+// .checkbox-postres:checked ~ .carta__items .carta__plato.postres,
+// .checkbox-bebidas:checked ~ .carta__items .carta__plato.bebidas {
+//     opacity: 1;
+//     min-height: 140px;
+//     min-width: 140px;
+//     padding: 0 10px;
+//     margin-left: 10px;
+//     margin-right: 10px;
+//     margin-top: 20px;
+//     visibility: visible;
+//     transform: scale(1);
+//     border-width: 3px;
+// }
+
+// @media only screen and (max-width: 650px) {
+//     .carta__cont {
+//         width: 100%;
+//     }
+//     label {
+//         display: block;
+//     }
+//     .carta__items {
+//         flex-direction: column;
+//         width: auto;
+//     }
+// }
+/***************/
+.carta__wrapper {
+    width: 100%;
+    padding: 60px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 12px;
+    padding-right: 12px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    content: "";
+    border-radius: 2px;
+    height: 20px;
+    padding: 5px;
+    background-color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 6px;
+    top: -4px;
+    z-index: -1;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    width: 0;
+  }
+  [type="radio"]:checked + label:after {
+    opacity: 1;
+    width: calc(100% - 24px);
+  }
+  .checkbox-todos:checked + label:after,
+  .checkbox-todos:not(:checked) + label:after {
+    background-color: hotpink;
+  }
+  
+  .checkbox-entradas:checked + label:after,
+  .checkbox-entradas:not(:checked) + label:after {
+    background-color: #f1c40f;
+  }
+  
+  .checkbox-carnes:checked + label:after,
+  .checkbox-carnes:not(:checked) + label:after {
+    background-color: #ff932b;
+  }
+  
+  .checkbox-pastas:checked + label:after,
+  .checkbox-pastas:not(:checked) + label:after {
+    background-color: #64e1fe;
+  }
+  
+  .checkbox-postres:checked + label:after,
+  .checkbox-postres:not(:checked) + label:after {
+    background-color: #6edbbe;
+  }
+  
+  .checkbox-bebidas:checked + label:after,
+  .checkbox-bebidas:not(:checked) + label:after {
+    background-color: #e75139;
+  }
+  
+  .checkbox-todos:checked + label {
+    margin-left: 17px;
+  }
+  
+  .seperator {
+    width: 100%;
+    height: 30px;
+  }
+  
+  .carta__cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #fff;
+    // background-color: slateblue;
+  }
+  
+  .carta__item {
+    border-radius: 4px;
+    box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.3s linear;
+    // max-width: 300px;
+  }
+  .carta__item.entradas {
+    border: 3px solid #f1c40f;
+  }
+  .carta__item.carnes {
+    border: 3px solid #ff932b;
+  }
+  .carta__item.pastas {
+    border: 3px solid #64e1fe;
+  }
+  .carta__item.postres {
+    border: 3px solid #6edbbe;
+  }
+  .carta__item.bebidas {
+    border: 3px solid #e75139;
+  }
+  .carta__item.entradas,
+  .carta__item.carnes,
+  .carta__item.pastas,
+  .carta__item.postres,
+  .carta__item.bebidas {
+    opacity: 0;
+    transform: scale(0);
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    border-width: 0;
+  }
+  .checkbox-todos:checked ~ .carta__cards .carta__item.entradas,
+  .checkbox-todos:checked ~ .carta__cards .carta__item.carnes,
+  .checkbox-todos:checked ~ .carta__cards .carta__item.pastas,
+  .checkbox-todos:checked ~ .carta__cards .carta__item.postres,
+  .checkbox-todos:checked ~ .carta__cards .carta__item.bebidas,
+  .checkbox-entradas:checked ~ .carta__cards .carta__item.entradas,
+  .checkbox-carnes:checked ~ .carta__cards .carta__item.carnes,
+  .checkbox-pastas:checked ~ .carta__cards .carta__item.pastas,
+  .checkbox-postres:checked ~ .carta__cards .carta__item.postres,
+  .checkbox-bebidas:checked ~ .carta__cards .carta__item.bebidas {
+    opacity: 1;
+    min-height: 140px;
+    min-width: calc(22% - 28px);
+    padding: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    visibility: visible;
+    transform: scale(1);
+    border-width: 3px;
+  }
+  
+  // .project:nth-child(2n - 3) {
+  //   grid-row-end: span 2;
+  // }
+  
+#carta__imagenPlato--1 {
+    flex-grow: 3;
+}  
+  
+  @media only screen and (max-width: 650px) {
+    .container {
+      width: 100%;
+    }
+    label {
+      display: block;
+    }
+    .carta__cards {
+      flex-direction: column;
+      width: auto;
+    }
+  
+  }
+  

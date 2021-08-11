@@ -35,11 +35,23 @@
   text-align: center;
 }
 
-/**********************TEAM*************************/
 
+
+
+/**********************TEAM*************************/
+.team__card {
+  text-align: center;
+}
+
+.card-img-top {
+  background-color: red;
+}
 .team__card-img {
     filter: grayscale(1);
     transform: scale(0.8);
+    max-height: 300px;
+    max-width: 200px;
+    margin: auto;
 }
 
 .team__card-img:hover {
