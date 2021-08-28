@@ -8,6 +8,7 @@
         <meta name="description" content="Contactese con Wilfredo Restaurant desde nuestra pagina, o venga a
             visitarnos.">
         <meta name="keywords" content="restaurant, contacto, ubicacion, reservas, telefono, email">
+        <link rel="icon" href="../images/favico.ico">
 
         <meta name="robots" content="index, follow">
         <meta name="robots" content="all">
@@ -93,39 +94,43 @@
                         <p>email@wilfredo.com</p>
                     </div>
                 </section>
-                <!-- Aqui va una seccion con horario e info de contacto -->
+                <!-- Aqui termina una seccion con horario e info de contacto -->
                 <!-- Aqui va un formulario de reservas -->
                 <section class="reservas__formulario col-md-5 col-sm-10">
                     <!--Aqui va un formulario de reservas-->
-                    <form action="actionform.php" method="post"
-                        enctype="application/x-www-form-urlencoded" class="reservas__formulario-formulario">
-                        <h2>Reservas</h2>
-                        <label for="nombreReserva">Nombre: </label>
-                        <input type="text" name="nombreReserva" id="nombreReserva"><br>
-                        <label for="email">Email: </label>
-                        <input type="text" name="email" id="email" required><br>
-                        <label for="telefono">Telefono</label>
-                        <input type="tel" name="telefono" id="telefono" required><br>
-                        <label for="fechareserva">Fecha</label>
-                        <input type="date" name="fechaReserva" id="fechaReserva"><br>
-                        <label for="comensales">Comensales</label>
-                        <select name="comensales" id="comensales">
-                            <option>2</option>
-                            <option>4</option>
-                            <option>6</option>
-                        </select><br>
-                        <label for="comentariosReserva">Comentarios</label><br>
-                        <textarea name="comentariosReserva" id="comentariosReserva"
-                            cols="40" rows="10"></textarea><br>
-                        <p>Recibiras la confirmacion via email. Hasta no recibirla, no
-                            esta confirmada
-                        </p>
-                        <label for="confirmarRserva">Entendido!</label>
-                        <input type="checkbox" name="confirmarRserva"
-                            id="confirmarRserva"
-                            required><br>
-                        <input type="submit" name="Enviar" class="btn botonRojo">
-                        <input type="reset" name="reset" class="btn botonRojo">
+                    <!-- form bootstrap -->
+                    <form action="actionform.php" method="post" enctype="application/x-www-form-urlencoded"
+                        class="reservas__formulario-formulario">
+                        <div class="mb-3">
+                            <label for="nombreReserva" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombreReserva"
+                                aria-describedby="nombreComensal">
+                            <div id="nombreComensal" class="form-text text-dark">Ingrese su nombre completo.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailReserva" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailReserva" placeholder="nombre@ejemplo.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechareserva" class="form-label">Fecha</label>
+                            <input type="date" class="form-control" name="fechaReserva" id="fechaReserva">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comensales" class="form-label">Cantidad de comensales</label>
+                            <input class="form-control" list="cantComensales" id="cantComensalesOpciones"
+                                placeholder="Seleccione">
+                            <datalist id="cantComensales">
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                            </datalist>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comentariosReserva" class="form-label">Comentarios</label>
+                            <textarea class="form-control" id="comentariosReserva" rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn botonRojo">Enviar</button>
                     </form>
                 </section>
                 <!-- Aqui termina el formulario de reservas -->
@@ -143,20 +148,20 @@
             </div>
             <!-- aqui van los horarios de atencion -->
             <div class="footerGral__item footerGral__item--horario">
-                <p>horarios</p>
-                <p>L a J 19 a 23</p>
-                <p>v a D 16 a 2am</p>
+                <p>HORARIOS</p>
+                <p>Martes a Jueves: 19 a 23</p>
+                <p>Viernes a Domingo: 16 a 2am</p>
             </div>
 
             <!-- aqui van las redes sociales -->
             <div class="footerGral__item footerGral__item--redes">
-                <a href="https://www.facebook.com/" rel=”nofollow” rel="noopener" rel="noreferrer" target="_blank">
+                <a href="https://www.facebook.com/" rel="noopener nofollow" target="_blank">
                     <img src="../images/redes-fb.png" alt="logo facebook">
                 </a>
-                <a href="https://www.instagram.com/" rel=”nofollow” rel="noopener" rel="noreferrer" target="_blank">
+                <a href="https://www.instagram.com/" rel="noopener nofollow" target="_blank">
                     <img src="../images/redes-ig.png" alt="logo instagram">
                 </a>
-                <a href="https://twitter.com/" rel=”nofollow” rel="noopener" rel="noreferrer" target="_blank">
+                <a href="https://twitter.com/" rel="noopener nofollow" target="_blank">
                     <img src="../images/redes-tw.png" alt="logo twitter">
                 </a>
             </div>

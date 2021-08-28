@@ -26,13 +26,11 @@ body {
 }
 
 .navegacion__mobil {
-  margin-left: auto;
+  margin: auto;
 }
 
 .navegacion__lista {
-  float: right;
-  margin-right: 20px;
-  text-align: end;
+  text-align: center;
 }
 
 /****ESTILOS INDEX*****/
@@ -830,28 +828,25 @@ body {
 .footerGral {
   height: auto;
   display: flex;
-  justify-content: space-evenly;
-  padding: 10px;
-  padding: 20px 50px;
+  justify-content: space-between;
+  padding: 20px;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .footerGral__item {
-  width: 50%;
+  min-width: 250px;
+  margin: 5px auto;
 }
 .footerGral__item p {
   margin: 0px;
 }
 
-.footerGral__item--horario {
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .footerGral__item--redes {
   width: 200px;
   max-height: 36px;
-  padding: 10px auto 0px auto;
+  margin: 15px auto;
+  padding: 10px auto 10px auto;
 }
 .footerGral__item--redes a {
   text-decoration: none;
@@ -880,7 +875,6 @@ body {
   margin: 20px auto;
   text-align: left;
   padding: 10px;
-  min-width: 350px;
 }
 .reservas__formulario label {
   margin: 5px;
