@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "reducircss": "purgecss --css css/custom.css --content *.html pages/*html --output css/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.0"
+  },
+  "devDependencies": {
+    "purgecss": "^4.0.3"
   }
 }
